@@ -241,11 +241,11 @@ fp = fopen(str,"w");
 for (i = 0; i < len; i++)
 {
 temp = 0;
-for (j = 0; j < 12; j++)
+for (j = 0; j < 2; j++)
 {
 temp += (double)rand()/RAND_MAX;
 }
-temp-=6;
+// temp-=6;
 fprintf(fp,"%lf\n",temp);
 }
 fclose(fp);
